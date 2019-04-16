@@ -117,4 +117,4 @@ function returnDomainName(url){
 
 module.exports = {
   appendUserNameAndSendResult
-}}
+}
