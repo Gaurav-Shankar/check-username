@@ -71,7 +71,6 @@ function appendUserNameAndSendResult(username,index) {
     console.log('Checking : '+clc.yellowBright(websitename));
     fetch(url)
     .then(res => {
-      console.log(res.status)
       if(res.status === 200) {
         counter = counter + 1;
         console.log(clc.redBright('Username already taken on '+clc.cyanBright(websitename)) + "\n")
@@ -84,6 +83,7 @@ function appendUserNameAndSendResult(username,index) {
       }
       index = index+1;
       if(index === urls.length) {
+        calculatePercentage(counter,username)
         return;
       }
       appendUserNameAndSendResult(username,index);  
@@ -93,7 +93,7 @@ function appendUserNameAndSendResult(username,index) {
 
 function calculatePercentage(counter, username) {
   var percentage = ((counter/urls.length) * 100).toFixed(2);
-  console.log("Username "+username+" exists on "+counter+" out of "+urls.length+" websites we checked and is "+percentage+" unique")
+  console.log(clc.greenBright("Username "+username+" exists on "+counter+" out of "+urls.length+" websites that we checked and is "+percentage+"% unique."));
 }
 
 function checkStatus(res) {
