@@ -47,7 +47,6 @@ var urls =  [
    'http://tumblr.com/',
    'http://www.posteet.com/posteets/',
    'http://www.fotolog.com/',
-   'https://www.hackerrank.com/', 
    'https://www.hackerearth.com/@',
    'https://dev.to/'
    ]
@@ -87,7 +86,7 @@ function appendUserNameAndSendResult(username,index) {
 
 function calculatePercentage(counter, username) {
   var percentage = ((counter/urls.length) * 100).toFixed(2);
-  console.log(clc.greenBright("Username "+username+" exists on "+counter+" out of "+urls.length+" websites that we checked and is "+percentage+"% unique."));
+  console.log(clc.greenBright("Username "+username+" exists on "+percentage+"% " + "of websites that we checked"));
 }
 
 function checkStatus(res) {
