@@ -1,0 +1,21 @@
+{
+  "name": "username-finder",
+  "version": "1.0.0",
+  "description": "How unique is your username?",
+  "main": "index.js",
+  "scripts": {
+    "test": "username"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "cli-color": "^1.3.0",
+    "commander": "^2.17.1",
+    "npm": "^6.4.0"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "username": "index.js"
+  }
+}
