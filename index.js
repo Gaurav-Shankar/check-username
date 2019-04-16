@@ -1,4 +1,6 @@
-var program = require('commander');
+#!/usr/bin/env node
+
+const program = require('commander');
 var checkusername = require('./checkusername');
  
 program

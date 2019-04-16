@@ -6,8 +6,15 @@
   "scripts": {
     "test": "username"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:grv19/check-username.git"
+  },
+  "author": "Gaurav Shankar",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grv19/check-username/issues"
+  },
   "dependencies": {
     "node-fetch": "^2.3.0",
     "cli-color": "^1.3.0",

@@ -61,44 +61,44 @@ var urls =  [
 var index = 0;
 var counter = 1;
 function appendUserNameAndSendResult(username,index) {
-  	websitename = returnDomainName(urls[index])
-  	if(websitename.includes('imgur') || websitename.includes('deviantart') || websitename.includes('newgrounds') || websitename.includes('weebly') ||websitename.includes('tumblr')){
-  		var url = "http://"+username+"."+websitename;
-  	}
-  	else{
-  		var url = urls[index]+username;
-  	}
-  	console.log('Checking : '+clc.yellowBright(websitename));
-  	fetch(url)
-  	.then(res => {
-  		console.log(res.status)
-  		if(res.status === 200) {
-  			counter = counter + 1;
-   			console.log(clc.redBright('Username already taken on '+clc.cyanBright(websitename)) + "\n")
-   		}
-   		else if(res.status === 404) {
-   			console.log(clc.greenBright('Username is available to take on '+clc.cyanBright(websitename)) + "\n")
-   		}
-   		else{
-   			console.log(clc.redBright("Could not check the username status "+clc.cyanBright(websitename)) + "\n")	
-   		}
-  		index = index+1;
-  		if(index === urls.length) {
-  			return;
-  		}
-  		appendUserNameAndSendResult(username,index);	
-  	})
+    websitename = returnDomainName(urls[index])
+    if(websitename.includes('imgur') || websitename.includes('deviantart') || websitename.includes('newgrounds') || websitename.includes('weebly') ||websitename.includes('tumblr')){
+      var url = "http://"+username+"."+websitename;
+    }
+    else{
+      var url = urls[index]+username;
+    }
+    console.log('Checking : '+clc.yellowBright(websitename));
+    fetch(url)
+    .then(res => {
+      console.log(res.status)
+      if(res.status === 200) {
+        counter = counter + 1;
+        console.log(clc.redBright('Username already taken on '+clc.cyanBright(websitename)) + "\n")
+      }
+      else if(res.status === 404) {
+        console.log(clc.greenBright('Username is available to take on '+clc.cyanBright(websitename)) + "\n")
+      }
+      else{
+        console.log(clc.redBright("Could not check the username status "+clc.cyanBright(websitename)) + "\n") 
+      }
+      index = index+1;
+      if(index === urls.length) {
+        return;
+      }
+      appendUserNameAndSendResult(username,index);  
+    })
 }
 
 
 function calculatePercentage(counter, username) {
-	var percentage = ((counter/urls.length) * 100).toFixed(2);
-	console.log("Username "+username+" exists on "+counter+" out of "+urls.length+" websites we checked and is "+percentage+" unique")
+  var percentage = ((counter/urls.length) * 100).toFixed(2);
+  console.log("Username "+username+" exists on "+counter+" out of "+urls.length+" websites we checked and is "+percentage+" unique")
 }
 
 function checkStatus(res) {
     if (res.ok) { // res.status >= 200 && res.status < 300
-  		return res;
+      return res;
     } else {
         console.log("Couldn't check the username")
     }
@@ -116,5 +116,5 @@ function returnDomainName(url){
 
 
 module.exports = {
-	appendUserNameAndSendResult
-}
+  appendUserNameAndSendResult
+}}
