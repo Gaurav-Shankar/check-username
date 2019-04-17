@@ -23,7 +23,7 @@ username u <your_username>
 
 Help
 ```bash
-livescores --help
+username u --help
 ```
 
 ## Contributing
