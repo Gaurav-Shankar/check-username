@@ -10,7 +10,6 @@ var urls =  [
    'https://mobile.twitter.com/',
    'https://www.patreon.com/',
    'https://www.youtube.com/user/',
-   'https://imgur.com/',
    'https://www.reddit.com/user/',
    'https://m.twitch.tv/profile',
    'https://ask.fm/',
