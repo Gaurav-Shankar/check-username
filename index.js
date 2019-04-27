@@ -7,9 +7,9 @@ var clc = require("cli-color");
 program
   .command('u <name>')
   .description('Check username availability across 60+ major websites!')
-  .action(function(name, options){
+  .action(async function(name, options){
     console.log('Checking username: %s', name);
-    checkusername.appendUserNameAndSendResult(name,0)
+    await checkusername.appendUserNameAndSendResult(name)
  });
 
 program.on('command:*', function() {

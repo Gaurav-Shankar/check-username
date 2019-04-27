@@ -1,0 +1,186 @@
+[
+  {
+    "url": "https://www.instagram.com/%s",
+    "name": "instagram.com"
+  },
+  {
+    "url": "https://disqus.com/by/%s",
+    "name": "disqus.com"
+  },
+  {
+    "url": "https://www.pinterest.com/%s",
+    "name": "pinterest.com"
+  },
+  {
+    "url": "https://codepen.io/%s",
+    "name": "codepen.io"
+  },
+  {
+    "url": "https://jsfiddle.net/user/%s",
+    "name": "jsfiddle.net"
+  },
+  {
+    "url": "https://mobile.twitter.com/%s",
+    "name": "mobile.twitter.com"
+  },
+  {
+    "url": "https://www.patreon.com/%s",
+    "name": "patreon.com"
+  },
+  {
+    "url": "https://www.youtube.com/user/%s",
+    "name": "youtube.com"
+  },
+  {
+    "url": "https://www.reddit.com/user/%s",
+    "name": "reddit.com"
+  },
+  {
+    "url": "https://m.twitch.tv/profile%s",
+    "name": "m.twitch.tv"
+  },
+  {
+    "url": "https://ask.fm/%s",
+    "name": "ask.fm"
+  },
+  {
+    "url": "https://medium.com/@%s",
+    "name": "medium.com"
+  },
+  {
+    "url": "https://github.com/%s",
+    "name": "github.com"
+  },
+  {
+    "url": "https://www.flickr.com/photos/%s",
+    "name": "flickr.com"
+  },
+  {
+    "url": "https://issuu.com/%s",
+    "name": "issuu.com"
+  },
+  {
+    "url": "https://fancy.com/%s",
+    "name": "fancy.com"
+  },
+  {
+    "url": "https://themeforest.net/user/%s",
+    "name": "themeforest.net"
+  },
+  {
+    "url": "https://myspace.com/%s",
+    "name": "myspace.com"
+  },
+  {
+    "url": "https://dribbble.com/%s",
+    "name": "dribbble.com"
+  },
+  {
+    "url": "https://www.kickstarter.com/profile/%s",
+    "name": "kickstarter.com"
+  },
+  {
+    "url": "https://about.me/%s",
+    "name": "about.me"
+  },
+  {
+    "url": "https://%s.deviantart.com",
+    "name": "deviantart.com"
+  },
+  {
+    "url": "https://en.gravatar.com/%s",
+    "name": "en.gravatar.com"
+  },
+  {
+    "url": "https://www.reverbnation.com/%s",
+    "name": "reverbnation.com"
+  },
+  {
+    "url": "https://bandcamp.com/%s",
+    "name": "bandcamp.com"
+  },
+  {
+    "url": "https://foursquare.com/%s",
+    "name": "foursquare.com"
+  },
+  {
+    "url": "https://www.behance.net/%s",
+    "name": "behance.net"
+  },
+  {
+    "url": "https://vid.me/%s",
+    "name": "vid.me"
+  },
+  {
+    "url": "https://ello.co/%s",
+    "name": "ello.co"
+  },
+  {
+    "url": "https://www.buzzfeed.com/%s",
+    "name": "buzzfeed.com"
+  },
+  {
+    "url": "https://followus.com/%s",
+    "name": "followus.com"
+  },
+  {
+    "url": "https://teamtreehouse.com/%s",
+    "name": "teamtreehouse.com"
+  },
+  {
+    "url": "https://venmo.com/%s",
+    "name": "venmo.com"
+  },
+  {
+    "url": "https://coderwall.com/%s",
+    "name": "coderwall.com"
+  },
+  {
+    "url": "https://angel.co/%s",
+    "name": "angel.co"
+  },
+  {
+    "url": "https://soundcloud.com/%s",
+    "name": "soundcloud.com"
+  },
+  {
+    "url": "https://weheartit.com/%s",
+    "name": "weheartit.com"
+  },
+  {
+    "url": "https://%s.newgrounds.com",
+    "name": "newgrounds.com"
+  },
+  {
+    "url": "http://www.crunchyroll.com/user/%s",
+    "name": "crunchyroll.com"
+  },
+  {
+    "url": "http://%s.weebly.com",
+    "name": "weebly.com"
+  },
+  {
+    "url": "http://profile.hatena.com/%s",
+    "name": "profile.hatena.com"
+  },
+  {
+    "url": "http://%s.tumblr.com",
+    "name": "tumblr.com"
+  },
+  {
+    "url": "http://www.posteet.com/posteets/%s",
+    "name": "posteet.com"
+  },
+  {
+    "url": "http://www.fotolog.com/%s",
+    "name": "fotolog.com"
+  },
+  {
+    "url": "https://www.hackerearth.com/@%s",
+    "name": "hackerearth.com"
+  },
+  {
+    "url": "https://dev.to/%s",
+    "name": "dev.to"
+  }
+]
