@@ -1,6 +1,6 @@
 {
   "name": "unique-username",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "How unique is your username?",
   "main": "index.js",
   "scripts": {
