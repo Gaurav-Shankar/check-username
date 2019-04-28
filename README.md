@@ -9,7 +9,7 @@ I created a simple tool using which you can instantly find out if your favorite 
 
 ## Installation
 
-Use [npm](https://www.npmjs.com/package/unique-username) to install livescores.
+Use [npm](https://www.npmjs.com/package/unique-username) to install username.
 
 ```bash
 npm i unique-username -g      //-g to install the project globally
