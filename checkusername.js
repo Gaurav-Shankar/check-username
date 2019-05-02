@@ -9,7 +9,12 @@ async function appendUserNameAndSendResult(username) {
   for (let site of sites) {
     console.log(`Checking : ${clc.yellowBright(site.name)}`);
 
-    const res = await fetch(util.format(site.url, encodeURIComponent(username)));
+    let res;
+    try {
+      res = await fetch(util.format(site.url, encodeURIComponent(username)));
+    } catch (err) {
+      res = {};
+    }
 
     if (res.status === 200) {
       counter++;
