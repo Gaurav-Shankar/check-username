@@ -1,5 +1,5 @@
 
-[![star this repo](http://githubbadges.com/star.svg?user=grv19&repo=check-username&style=default)](https://github.com/grv19/check-username)
+[![star this repo](http://githubbadges.com/star.svg?user=Gaurav-Shankar&repo=check-username&style=default)](https://github.com/Gaurav-Shankar/check-username)
 
 #  Check Username availability across 50+ websites instantly
 
