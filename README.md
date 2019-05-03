@@ -1,5 +1,5 @@
 
-[![star this repo](http://githubbadges.com/star.svg?user=Gaurav-Shankar&repo=check-username&style=default)](https://github.com/Gaurav-Shankar/check-username)
+[![NPM](https://nodei.co/npm/unique-username.png)](https://nodei.co/npm/unique-username/)
 
 #  Check Username availability across 50+ websites instantly
 
