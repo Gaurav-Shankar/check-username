@@ -3,35 +3,32 @@ import Username from './Username';
 import Sites from './Sites';
 
 const App = () => {
-	const [sites,setSites] = useState([]);
+	const [sites,setSites] = useState([null,[]]);
 	useEffect(() => {
-		(async function() {
-			const s = await getSites();
-			setSites(s);
-		}());
-	},[getSites]);
+		getSites();
+	},[setSites]);
+	console.log(sites);
 	return (
 	  <div>
-	  	<Username checkUsername={(user)=>checkUsername(user)}/>
-	  	<Sites sites={sites} />
+	  	<Username checkUsername={(user)=>checkUsername(user)} />
+	  	{sites[0] ? sites[0] : ''}
+	  	<Sites sites={sites[1]} />
+	  	<button onClick={getSites}>get all sites</button>
 	  </div>
  );
+	async function checkUsername(user) {
+		fetch(`/api/user/${user}`,{accept:'application/json'})
+		.then(res=>res.json())
+		.then(data => setSites(data))
+		.catch(err=>console.error('user',err))
+	}
+
+	async function getSites() {
+		fetch(`/api/sites`,{accept:'application/json'})
+		.then(res=>res.json())
+		.then(data => setSites(data))
+		.catch(err=>console.error('sites',err))
+	}
 }
 
 export default App;
-
-async function checkUsername(user) {
-	fetch(`/api/user/${user}`,{accept:'application/json'})
-	.then(res=>res.json())
-	.catch(err=>console.error('res',err))
-	.then(data => console.log(data))
-	.catch(err=>console.error('data',err))
-}
-
-async function getSites() {
-	return fetch(`/api/sites`,{accept:'application/json'})
-	.then(res=>res.json())
-	.catch(err=>console.error('res',err))
-	.then(data => data)
-	.catch(err=>console.error('data',err))
-}

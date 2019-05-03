@@ -2,6 +2,7 @@
 	display:grid;
 	grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 	grid-gap:5px;
+	padding:5px;
 }
 
 .site {
@@ -9,4 +10,16 @@
 	border:1px solid black;
 	text-align:center;
 	padding:5px 0;
+}
+
+.avail {
+	background:green;
+}
+
+.taken {
+	background:red;
+}
+
+.unkown {
+	background:gray;
 }

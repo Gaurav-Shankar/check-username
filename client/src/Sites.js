@@ -4,7 +4,7 @@ import './Sites.css';
 const Sites = ({sites}) => (
   <div className="sites">
   	{sites.map(site => (
-  		<div className="site" key={site.name}>{site.name}</div>
+  		<div className={`site ${site.class}`} key={site.name}>{site.name}</div>
   	))}
   </div>
 )

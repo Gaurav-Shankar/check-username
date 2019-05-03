@@ -31,12 +31,12 @@ process.env.NODE_ENV === 'production' && app.use(express.static('client/build'))
 
 app.use(bodyParser.json());
 
-app.get('/api/user/:_user', (req, res) => {
-	checkusername.appendUserNameAndSendResult(req.params._user,sites);
+app.get('/api/user/:_user', async function(req, res) {
+	res.json(await checkusername.appendUserNameAndSendResult(req.params._user,sites));
 });
 
 app.get('/api/sites', (req, res) => {
-	res.json(sites);
+	res.json([null,sites]);
 });
 
 app.listen(port, () => console.log(`express listening on port ${port}`));
