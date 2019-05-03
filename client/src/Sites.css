@@ -6,20 +6,20 @@
 }
 
 .site {
-	background:yellow;
+	background:#00FFFF;
 	border:1px solid black;
 	text-align:center;
 	padding:5px 0;
 }
 
 .avail {
-	background:green;
+	background:#00FF00;
 }
 
 .taken {
-	background:red;
+	background:#FF0000;
 }
 
 .unkown {
-	background:gray;
+	background:#C0C0C0;
 }
