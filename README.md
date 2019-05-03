@@ -1,7 +1,7 @@
 
 [![NPM](https://nodei.co/npm/unique-username.png)](https://nodei.co/npm/unique-username/)
 
-[![](https://img.shields.io/npm/dm/unique-username.svg)
+![](https://img.shields.io/npm/dm/unique-username.svg)
 #  Check Username availability across 50+ websites instantly
 
 Very often while registering to new websites we try to keep the same username across all the websites. Sometimes the username is available and sometimes it’s not. :(
