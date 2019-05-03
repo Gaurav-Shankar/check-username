@@ -4,7 +4,6 @@ const program = require('commander');
 var checkusername = require('./checkusername');
 var clc = require("cli-color");
 const express = require('express');
-// const bodyParser = require('body-parser');
 const sites = require("./sites").sort((a,b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
  
 program
@@ -28,8 +27,6 @@ const app = express();
 const port = process.env.PORT || 4040;
 
 process.env.NODE_ENV === 'production' && app.use(express.static('client/build'));
-
-// app.use(bodyParser.json());
 
 app.get('/api/user/:_user', async function(req, res) {
 	res.json(await checkusername.appendUserNameAndSendResult(req.params._user,sites));

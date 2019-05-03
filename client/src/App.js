@@ -8,7 +8,8 @@ const App = () => {
 	const [currentSites,setCurrentSites] = useState(sites);
 	const [percentage,setPercentage] = useState(null);
 	const [isLoading,setIsLoading] = useState(true);
-	const [inputValue,setInputValue] = useState(null);
+	const [inputValue,setInputValue] = useState('');
+	const [username,setUsername] = useState(null);
 	useEffect(() => {
 		getSites();
 	},[setSites]);
@@ -16,13 +17,15 @@ const App = () => {
 	  <div>
 	  	<Username search={inputValue} setInputValue={setInputValue} checkUsername={(user)=>checkUsername(user)} />
 	  	<input placeholder="search sites" onChange={(e)=>searchSites(e)} />
-	  	<div>{percentage && `Username ${inputValue} exists on ${percentage}% of websites that we checked`}</div>
-	  	{!isLoading && <Sites sites={currentSites} />}
-	  	{isLoading && <div className="lds-default">{Array.from({length:12},()=><div></div>)}</div>}
+	  	<div>{percentage && `Username '${username}' is unavailable on ${percentage}% of websites that we checked`}</div>
+	  	{isLoading ? <div style={{textAlign:'center'}}><img src="download.gif" alt="loading" /></div> : <Sites sites={currentSites} />}
 	  </div>
  );
 	async function checkUsername(user) {
 		setIsLoading(true);
+		setUsername(user);
+		setInputValue('');
+		setPercentage(null);
 		fetch(`/api/user/${user}`,{accept:'application/json'})
 		.then(res=>res.json())
 		.then(({ percentage, sites }) => {
