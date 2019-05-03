@@ -29,7 +29,7 @@ async function appendUserNameAndSendResult(username,sites) {
     }
   }
 
-  return [calculatePercentage(counter, username),sites];
+  return { percentage:calculatePercentage(counter, username), sites };
 
   function calculatePercentage(counter, username) {
     var percentage = ((counter / sites.length) * 100).toFixed(2);

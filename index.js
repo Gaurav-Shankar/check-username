@@ -4,8 +4,8 @@ const program = require('commander');
 var checkusername = require('./checkusername');
 var clc = require("cli-color");
 const express = require('express');
-const bodyParser = require('body-parser');
-const sites = require("./sites");
+// const bodyParser = require('body-parser');
+const sites = require("./sites").sort((a,b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
  
 program
   .command('u <name>')
@@ -29,14 +29,18 @@ const port = process.env.PORT || 4040;
 
 process.env.NODE_ENV === 'production' && app.use(express.static('client/build'));
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.get('/api/user/:_user', async function(req, res) {
 	res.json(await checkusername.appendUserNameAndSendResult(req.params._user,sites));
 });
 
 app.get('/api/sites', (req, res) => {
-	res.json([null,sites]);
+	res.json(sites);
+});
+
+app.get('/api/sites/:_name', (req, res) => {
+	res.json(sites.find(({name}) => name === req.params._name));
 });
 
 app.listen(port, () => console.log(`express listening on port ${port}`));

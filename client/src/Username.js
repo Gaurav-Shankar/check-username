@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Username = ({ checkUsername }) => {
-	const [inputValue,setInputValue] = useState(null);
+const Username = ({ search, setInputValue, checkUsername }) => {
 	return (
 	  <div>
 	  	<input placeholder="enter username" onChange={(e)=>setInputValue(e.target.value)}/>
-	  	<button onClick={()=>checkUsername(inputValue)}>check</button>
+	  	<button onClick={()=>checkUsername(search)}>check all sites</button>
 	  </div>
 	);
 }
