@@ -196,10 +196,6 @@
     "name": "udemy.com"
   },
   {
-    "url": "https://www.udemy.com/user/%s",
-    "name": "udemy.com"
-  },
-  {
     "url": "https://www.quora.com/profile/%s",
     "name": "quora.com"
   },
@@ -222,10 +218,6 @@
   {
     "url": "https://vimeo.com/%s",
     "name": "vimeo.com"
-  },
-  {
-    "url": "https://www.producthunt.com/@%s",
-    "name": "producthunt.com"
   },
   {
     "url": "https://www.producthunt.com/@%s",
