@@ -182,5 +182,101 @@
   {
     "url": "https://dev.to/%s",
     "name": "dev.to"
+  },
+  {
+    "url": "https://hackerone.com/%s",
+    "name": "hackerone.com"
+  },
+  {
+    "url": "https://bugcrowd.com/%s",
+    "name": "bugcrowd.com"
+  },
+  {
+    "url": "https://www.udemy.com/user/%s",
+    "name": "udemy.com"
+  },
+  {
+    "url": "https://www.udemy.com/user/%s",
+    "name": "udemy.com"
+  },
+  {
+    "url": "https://www.quora.com/profile/%s",
+    "name": "quora.com"
+  },
+  {
+    "url": "https://bitbucket.org/%s",
+    "name": "bitbucket.com"
+  },
+  {
+    "url": "https://gitlab.com/%s",
+    "name": "gitlab.com"
+  },
+  {
+    "url": "https://dribbble.com/%s",
+    "name": "dribbble.com"
+  },
+  {
+    "url": "https://keybase.io/%s",
+    "name": "keybase.io"
+  },
+  {
+    "url": "https://vimeo.com/%s",
+    "name": "vimeo.com"
+  },
+  {
+    "url": "https://www.producthunt.com/@%s",
+    "name": "producthunt.com"
+  },
+  {
+    "url": "https://www.producthunt.com/@%s",
+    "name": "producthunt.com"
+  },
+  {
+    "url": "https://www.linkedin.com/in/%s",
+    "name": "linkedin.com"
+  },
+  {
+    "url": "https://steamcommunity.com/id",
+    "name": "steamcommunity.com"
+  },
+  {
+    "url": "https://flipboard.com/@%s",
+    "name": "flipboard.com"
+  },
+  {
+    "url": "https://mastodon.social/@%s",
+    "name": "mastodon.social"
+  },
+  {
+    "url": "https://%s.slack.com/",
+    "name": "slack.com"
+  },
+  {
+    "url": "https://www.etsy.com/people/%s",
+    "name": "etsy.com"
+  },
+  {
+    "url": "https://99designs.com/profiles/%s",
+    "name": "99designs.com"
+  },
+  {
+    "url": "https://www.hackerrank.com/%s",
+    "name": "hackerrank.com"
+  },
+  {
+    "url": "https://www.codechef.com/users/%s",
+    "name": "codechef.com"
+  },
+  {
+    "url": "https://www.topcoder.com/members/%s",
+    "name": "topcoder.com"
+  },
+  {
+    "url": "https://codeforces.com/profile/%s",
+    "name": "codeforces.com"
+  },
+  {
+    "url": "https://gab.com/%s",
+    "name": "gab.com"
   }
 ]
