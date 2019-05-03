@@ -1,9 +1,8 @@
 const clc = require("cli-color");
 const fetch = require("node-fetch");
 const util = require("util");
-const sites = require("./sites");
 
-async function appendUserNameAndSendResult(username) {
+async function appendUserNameAndSendResult(username,sites) {
   let counter = 0;
 
   for (let site of sites) {
@@ -26,13 +25,13 @@ async function appendUserNameAndSendResult(username) {
     }
   }
 
-  calculatePercentage(counter, username);
-}
+  return calculatePercentage(counter, username);
 
-function calculatePercentage(counter, username) {
-  var percentage = ((counter / sites.length) * 100).toFixed(2);
+  function calculatePercentage(counter, username) {
+    var percentage = ((counter / sites.length) * 100).toFixed(2);
 
-  console.log(clc.greenBright(`Username ${username} exists on ${percentage}% of websites that we checked`));
+    console.log(clc.greenBright(`Username ${username} exists on ${percentage}% of websites that we checked`));
+  }
 }
 
 module.exports = {

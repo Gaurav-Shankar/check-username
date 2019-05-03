@@ -1,0 +1,12 @@
+.sites {
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+	grid-gap:5px;
+}
+
+.site {
+	background:yellow;
+	border:1px solid black;
+	text-align:center;
+	padding:5px 0;
+}
