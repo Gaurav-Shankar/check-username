@@ -252,7 +252,7 @@
     "name": "99designs.com"
   },
   {
-    "url": "https://www.hackerrank.com/%s",
+    "url": "https://www.hackerrank.com/rest/hackers/%s/scores_elo",
     "name": "hackerrank.com"
   },
   {
