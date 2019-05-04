@@ -3,12 +3,6 @@
   "version": "2.0.4",
   "description": "How unique is your username?",
   "main": "index.js",
-  "scripts": {
-    "start": "concurrently \"cd client/ && npm start\" \"nodemon index.js\"",
-    "setup": "cd client/ && npm install && cd .. && npm install && npm start",
-    "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build",
-    "test": "jest"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:Gaurav-Shankar/check-username.git"
@@ -18,16 +12,22 @@
   "bugs": {
     "url": "https://github.com/Gaurav-Shankar/check-username/issues"
   },
+  "preferGlobal": true,
+  "bin": {
+    "username": "index.js"
+  },
+  "scripts": {
+    "start": "concurrently \"cd client/ && npm start\" \"nodemon index.js\"",
+    "setup": "cd client/ && npm install && cd .. && npm install && npm start",
+    "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build",
+    "test": "jest"
+  },
   "dependencies": {
     "cli-color": "^1.4.0",
     "commander": "^2.20.0",
     "express": "^4.16.4",
     "node-fetch": "^2.5.0",
     "npm": "^6.9.0"
-  },
-  "preferGlobal": true,
-  "bin": {
-    "username": "index.js"
   },
   "devDependencies": {
     "jest": "^24.7.1",

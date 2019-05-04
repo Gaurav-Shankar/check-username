@@ -22,18 +22,20 @@ const App = () => {
 	  </div>
  );
 	async function checkUsername(user) {
-		setIsLoading(true);
-		setUsername(user);
-		setInputValue('');
-		setPercentage(null);
-		fetch(`/api/user/${user}`,{accept:'application/json'})
-		.then(res=>res.json())
-		.then(({ percentage, sites }) => {
-			setIsLoading(false);
-			setPercentage(percentage);
-			setCurrentSites(sites);
-		})
-		.catch(err=>console.error('user',err))
+		if (user.length) {
+			setIsLoading(true);
+			setUsername(user);
+			setInputValue('');
+			setPercentage(null);
+			fetch(`/api/user/${user}`,{accept:'application/json'})
+			.then(res=>res.json())
+			.then(({ percentage, sites }) => {
+				setIsLoading(false);
+				setPercentage(percentage);
+				setCurrentSites(sites);
+			})
+			.catch(err=>console.error('user',err))
+		}
 	}
 
 	async function getSites() {
