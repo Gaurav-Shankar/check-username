@@ -14,7 +14,10 @@ jest.spyOn(global.console, "log");
 
 test("fetch throws exception", async () => {
   fetch.mockImplementation(() => Promise.reject("fake fetch error"));
-  await expect(appendUserNameAndSendResult("test")).resolves.toEqual(undefined);
+  await expect(appendUserNameAndSendResult("test",sites)).resolves.toMatchObject({
+    "percentage": "0.00", 
+    "sites": [{"class": "unkown", "name": "site1", "url": "https://example.com"}]
+  });
   expect(console.log).toHaveBeenNthCalledWith(
     2,
     clc.redBright(`Could not check the username status ${clc.cyanBright("site1")}\n`)

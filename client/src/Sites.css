@@ -1,0 +1,25 @@
+.sites {
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+	grid-gap:5px;
+	padding:5px;
+}
+
+.site {
+	background:#00FFFF;
+	border:1px solid black;
+	text-align:center;
+	padding:5px 0;
+}
+
+.avail {
+	background:#00FF00;
+}
+
+.taken {
+	background:#FF0000;
+}
+
+.unkown {
+	background:#C0C0C0;
+}
