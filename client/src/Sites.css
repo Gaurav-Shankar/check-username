@@ -1,15 +1,19 @@
 .sites {
-	display:grid;
-	grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-	grid-gap:5px;
-	padding:5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-auto-rows: 94px;
+  grid-gap: 20px;
+  margin: 20px;
+  margin-top:200px;
 }
 
 .site {
-	background:#00FFFF;
-	border:1px solid black;
-	text-align:center;
-	padding:5px 0;
+  display: flex;
+  border-radius: 15px 50px 30px 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #00B4CC;
 }
 
 .avail {

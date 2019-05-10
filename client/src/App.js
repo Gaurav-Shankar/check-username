@@ -14,9 +14,9 @@ const App = () => {
 		getSites();
 	},[setSites]);
 	return (
-	  <div>
+	  <div className="site-search">
 	  	<Username search={inputValue} setInputValue={setInputValue} checkUsername={(user)=>checkUsername(user)} />
-	  	<input placeholder="search sites" onChange={(e)=>searchSites(e)} />
+	  	{/* <input placeholder="Search app names" onChange={(e)=>searchSites(e)} /> */}
 	  	<div>{percentage && `Username '${username}' is unavailable on ${percentage}% of websites that we checked`}</div>
 	  	{isLoading ? <div style={{textAlign:'center'}}><img src="download.gif" alt="loading" /></div> : <Sites sites={currentSites} />}
 	  </div>
