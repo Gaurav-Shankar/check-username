@@ -56,7 +56,7 @@ program.on('command:*', function() {
 });
  
 program
-  .version('3.0.0')
+  .version('4.0.0')
 
 program.parse(process.argv);
 
