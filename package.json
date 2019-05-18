@@ -22,7 +22,7 @@
     "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build",
     "test": "jest"
   },
-"engines": {
+  "engines": {
     "node": "^10.10.0"
   },
   "dependencies": {

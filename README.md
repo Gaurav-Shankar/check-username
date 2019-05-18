@@ -20,9 +20,19 @@ npm i unique-username -g      //-g to install the project globally
 ```
 
 ## Usage
-Check the availability of a particular username
+Check the availability of a particular username across all 140+ websites.
 ```bash
 username u <your_username>
+```
+
+Check the availability of a particular username on a particular website.
+```bash
+username d <serviceName> <your_username>
+```
+
+Get the list of all supported services
+```bash
+username services
 ```
 
 Help
