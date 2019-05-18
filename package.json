@@ -27,10 +27,13 @@
   },
   "dependencies": {
     "cli-color": "^1.4.0",
+    "clui": "^0.3.6",
     "commander": "^2.20.0",
     "express": "^4.16.4",
     "node-fetch": "^2.5.0",
-    "npm": "^6.5.0"
+    "npm": "^6.5.0",
+    "open": "^6.3.0",
+    "opn": "^6.0.0"
   },
   "devDependencies": {
     "jest": "^24.7.1",

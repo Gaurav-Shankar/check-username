@@ -38,13 +38,15 @@ async function appendUserNameAndSendResult(username,sites) {
       res = await fetch(url)
       .then(res => res.json())
       .then(json =>  { 
-      console.log("Checking : "+json.appName)
+      console.log("\n  Checking : "+json.appName)
       if (json.userNameAvailable === true) {
         counter++;
-        console.log(clc.greenBright(`Username is available to take on ${clc.cyanBright(site.name)}\n`));
+        console.log(clc.greenBright(`  Username is available to take on ${clc.cyanBright(site.name)}`));
+        console.log("  "+site.url+ "\n")
       }
       else if(json.userNameAvailable === false) {
-        console.log(clc.redBright(`Username already taken on ${clc.cyanBright(site.name)}\n`));
+        console.log(clc.redBright(`  Username already taken on ${clc.cyanBright(site.name)}`));
+        console.log("  "+site.url+ "\n")
       }
     }) 
     } catch (err) {
@@ -57,18 +59,18 @@ async function appendUserNameAndSendResult(username,sites) {
   };
 
   function stats(counter, username) {
-    console.log(clc.greenBright(`Username ${username} exists on ${counter} out of ${sites.length} websites that we checked`));
-    return percentage;
+    console.log(clc.greenBright(`  Username ${username} is available to take on ${counter} out of ${sites.length} websites that we checked`));
   }
 }
 
 function printResources(sites) {
   sites = sites.map(({name,url}) => {return {name,url,class:null}});
-  console.log("List of apps supported.")
+  console.log("  List of apps supported.")
   for (let site of sites) {
-    console.log(clc.yellowBright(site.name + "\n"));
+    console.log(clc.yellowBright("  "+site.name));
+    console.log(clc.cyanBright("  "+site.url + "\n"));
   }
-  console.log("Total "+sites.length+" apps supported currently");
+  console.log("  Total "+sites.length+" apps supported currently");
 }
 
 async function getParticularAppUserAvailability(appName,username,sites) {
@@ -79,10 +81,12 @@ async function getParticularAppUserAvailability(appName,username,sites) {
         .then(json =>  {
         
           if (json.userNameAvailable === true) {
-            console.log(clc.greenBright("Username is available to take on " +clc.cyanBright(appName)));
+            console.log(clc.greenBright("\n  Username is available to take on " +clc.cyanBright(appName)));
+            console.log("  "+site.url)
           }
           else if(json.userNameAvailable === false) {
-            console.log(clc.redBright("Username already taken on " +clc.cyanBright(appName)));
+            console.log(clc.redBright("\n  Username already taken on " +clc.cyanBright(appName)));
+            console.log("  "+site.url)
           }
           else{
             console.log(clc.redBright(json.errorMessage))
