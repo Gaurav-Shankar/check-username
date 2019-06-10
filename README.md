@@ -5,6 +5,12 @@
 
 [![Open Source Helpers](https://www.codetriage.com/gaurav-shankar/check-username/badges/users.svg)](https://www.codetriage.com/gaurav-shankar/check-username)
 
+<p align="center">
+    <a href="https://www.producthunt.com/posts/usernamecli?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-hat-sh" target="_blank">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=157956&theme=dark&period=daily" alt="hat.sh - Free, fast, secure and serverless file encryption | Product Hunt Embed" width="250px"/>
+    </a>
+  </p>
+
 #  Check Username availability across 140+ websites instantly
 
 Very often while registering to new websites we try to keep the same username across all the websites. Sometimes the username is available and sometimes it’s not. :(
