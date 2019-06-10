@@ -1,16 +1,13 @@
-
-
-
-<p align="center">
-    [![NPM](https://nodei.co/npm/unique-username.png)](https://nodei.co/npm/unique-username/)
+[![NPM](https://nodei.co/npm/unique-username.png)](https://nodei.co/npm/unique-username/)
 
 ![](https://img.shields.io/npm/dm/unique-username.svg)
 
 [![Open Source Helpers](https://www.codetriage.com/gaurav-shankar/check-username/badges/users.svg)](https://www.codetriage.com/gaurav-shankar/check-username)
-    <a href="https://www.producthunt.com/posts/usernamecli?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-hat-sh" target="_blank">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=157956&theme=dark&period=daily" alt="hat.sh - Free, fast, secure and serverless file encryption | Product Hunt Embed" width="250px"/>
+
+<p>
+    <a href="https://www.producthunt.com/posts/usernamecli?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-usernamecli" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=155902&theme=dark" alt="usernameCLI - How unique is your username? | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" />
     </a>
-  </p>
+ </p>
 
 #  Check Username availability across 140+ websites instantly
 
