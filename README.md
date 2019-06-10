@@ -5,8 +5,7 @@
 [![Open Source Helpers](https://www.codetriage.com/gaurav-shankar/check-username/badges/users.svg)](https://www.codetriage.com/gaurav-shankar/check-username)
 
 <p>
-    <a href="https://www.producthunt.com/posts/usernamecli?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-usernamecli" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=155902&theme=dark" alt="usernameCLI - How unique is your username? | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" />
-    </a>
+    <a href="https://www.producthunt.com/posts/usernamecli?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-usernamecli" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=155902&theme=dark&period=daily" alt="usernameCLI - How unique is your username? | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
  </p>
 
 #  Check Username availability across 140+ websites instantly
